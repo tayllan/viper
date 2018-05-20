@@ -1,0 +1,97 @@
+html {
+    text-align: center;
+}
+
+#dashboard {
+    color: white;
+    background-color: #09a3d5;
+    height: 100vh;
+}
+
+#dashboard form select {
+    color: black;
+}
+
+#dashboard form div {
+    padding: 0px 1.75rem 0.5rem;
+    font-size: 80%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    text-align: right;
+}
+
+#workspace {
+    font-size: 120%;
+    background-color: #f6f6f6;
+    height: 100vh;
+}
+
+#texto {
+    line-height: 2.5;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+button.entity {
+    border: none;
+    padding: 0.45em 0.6em;
+    margin: 0 0.25em;
+    line-height: 1;
+    border-radius: 0.35em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.entity-class {
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 1;
+    border-radius: 0.35em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.button-xsmall {
+    font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}

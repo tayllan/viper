@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Viper</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/js/main.js"></script>
+    </head>
+    <body class="pure-g">
+        <div id="dashboard" class="pure-u-1-6">
+            <h1>Viper</h1>
+            <hr>
+
+            <form class="pure-form" action="/dataset/save" method="post">
+                <div>
+                    <label><strong>INTERFACE</strong></label>
+                    <select name="nlp-option">
+                        <option value="ner" selected>Named Entities</option>
+                        <!-- <option>Text Classification</option> -->
+                    </select>
+                </div>
+
+                <div>
+                    <label><strong>DATASET</strong></label>
+                    <input name="dataset" type="file">
+                </div>
+
+                <button class="button-success pure-button">Update</button>
+            </form>
+            <hr>
+
+            <h4><a href="/dataset" download>Download Classified Dataset</a></h4>
+        </div>
+
+        <div id="workspace" class="pure-u-5-6">
+
+            <br>
+
+            <h1 class="waiting-for-sentence" style="display: none;">
+                You must select a Dataset on the dashboard!
+            </h1>
+
+            <div class="pure-g not-waiting-for-sentence">
+                <div class="pure-u-1-5"></div>
+
+                <div id="texto" class="pure-u-3-5"></div>
+
+                <div class="pure-u-1-5"></div>
+            </div>
+
+            <br>
+
+            <button id="ok" class="button-success button-xlarge pure-button not-waiting-for-sentence">
+                Next
+            </button>
+        </div>
+    </body>
+</html>
